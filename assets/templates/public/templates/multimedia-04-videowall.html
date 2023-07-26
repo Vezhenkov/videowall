@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Видеостена se</title>
+    <link rel="stylesheet" href="/assets/templates/public/css/videowall-simple.min.css">
+    <script defer src="/assets/templates/public/js/media/videowall-simple.min.js"></script>
+</head>
+<body class="body">
+    <div class="video-wall">
+        <div class="video-wall__left">
+            <div class="daily">
+                <div class="daily__date date">
+                    <div class="date__time"></div>
+                    <div class="date__today"></div>
+                </div>
+                <div class="daily__global-news global-news">
+                    [[videowall-simple? &get=`global-news`]]
+                </div>
+                <div class="daily__local-news local-news">
+                    [[videowall-simple? &get=`local-news`]]
+                </div>
+            </div>
+        </div>
+        <div class="video-wall__center">
+            <div class="slide">
+                <img class="slide__image" alt="" src="">
+                <div class="slide__title"></div>
+                <div class="slide__content"></div>
+            </div>
+        </div>
+        <div class="video-wall__right">
+            <div class="video">
+                <div class="video__title"></div>
+                <video class="video__player" autoplay="" src=""></video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
